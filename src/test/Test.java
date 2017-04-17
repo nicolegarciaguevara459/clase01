@@ -5,6 +5,8 @@
  */
 package test;
 
+import util.Conexion;
+
 /**
  *
  * @author UPEU
@@ -16,6 +18,13 @@ public class Test {
      */
     public static void main(String[] args) {
         // TODO code application logic here
+        conex();
     }
-    
+    public static void conex(){
+        if(Conexion.getConexion()!=null){
+            System.out.println("Si");
+        }else{
+            System.out.println("No");
+        }
+    }
 }
